@@ -1,11 +1,14 @@
 <?php
     $regexId = '/^UA-[0-9]{8,9}-[0-9]{1}$/' ;
+    if (!empty($_POST['id'])) {
         if (preg_match($regexId, $_POST['id'])) {
             update_option('id', $_POST['id']);
         }
-        if (isset($_POST['lang'])) {
-            update_option('lang', $_POST['lang']);
-        }
+    }
+
+    if (isset($_POST['lang'])) {
+        update_option('lang', $_POST['lang']);
+    }
 // UA-00000000-0 
 // UA-171799874-1
 
@@ -50,7 +53,7 @@
                         <td>
                             <label for="langue">Changer de langue : 
                             <select name="lang" id="lang">
-                                <option value="" selected disable>Select a value</option>
+                                <option value="" selected disable>Selectionner une valeur</option>
                                 <option value="bg">Bulgare</option>
                                 <option value="cn">chinois</option>
                                 <option value="cs">Tchèque</option>

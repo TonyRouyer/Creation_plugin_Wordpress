@@ -579,7 +579,7 @@ div#tarteaucitronServices {
     cursor: pointer;
     display: inline-block;
     font-size: 11px !important;
-    padding: 8px 10px 8px;
+    padding: 15px 18px 15px;
 }
 
 #tarteaucitronAlertSmall #tarteaucitronManager:hover {
@@ -622,8 +622,8 @@ div#tarteaucitronServices {
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
     cursor: pointer;
-    display: inline-block;
     font-size: 30px;
+    display: inline-block;
     padding: 0px 10px;
     vertical-align: top;
 }
